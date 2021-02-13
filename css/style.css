@@ -14,7 +14,7 @@
     --basic-blue-focus: #669EC0;
     --basic-blue-active: #5496BD;
     --basic-grey-footer: #BDBBBC;
-    ;
+    --basic-white-03: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -23,13 +23,12 @@
     min-width: 1280px;
     margin: 0;
     padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-grey);
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -48,8 +47,11 @@
   .main-header {
     line-height: 26px;
     font-weight: 700;
-    color: var(--basic-white);
     background-color: var(--basic-white);
+  }
+
+  .site-navigation {
+    color: var(--basic-black);
   }
   
   .site-navigation,
@@ -65,7 +67,6 @@
 
 .site-navigation a:focus {
   opacity: 0.3;
-  mix-blend-mode: normal;
 }
 
 .site-navigation a:active {
@@ -74,6 +75,10 @@
 
 .container {
     text-align: center;
+}
+
+.section-logo {
+    background-color: var(--basic-grey);
 }
 
 .subtitle-features {
@@ -111,7 +116,7 @@
 }
 
 .search-info-subtitle {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 30px;
     line-height: 24px;
 }
@@ -130,19 +135,18 @@
 
 .search-button:active {
     background-color: var(--basic-brown-active);
-    mix-blend-mode: normal;
-    opacity: 0.3;
+    color: var(--basic-white-03);
 }
 
 .search-item {
-    font-weight: bold;
+    font-weight: 700;
     line-height: 26px;
 }
 
 .search-button-btn {
     background-color: var(--basic-blue-light);
     color: var(--basic-white);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
@@ -154,18 +158,17 @@
 
 .search-button-btn:active {
     background-color: var(--basic-blue-active);
-    mix-blend-mode: normal;
-    opacity: 0.3;
+    color: var(--basic-white-03);
 }
 
 .main-footer {
     text-align: center;
     background-color: var(--basic-white);
-    opacity: 0,9;
+    opacity: 0.9;
 }
 
 .footer-contacts {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 21px;
     line-height: 26px;
 }
